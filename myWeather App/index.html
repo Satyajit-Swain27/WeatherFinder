@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-weather-globe-flaticons-lineal-color-flat-icons.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-card">
+            <div class="weather-header">
+                <h1>Weather Finder</h1>
+            </div>
+            <input type="text" id="city-input" placeholder="Enter city" autocomplete="off" oninput="suggestCity()" />
+            <div id="suggestions" class="suggestions"></div>
+
+            <div id="weather-info">
+                <div id="city-name"></div>
+                <div id="temperature"></div>
+                <div id="condition"></div>
+                <div id="humidity"></div>
+                <div id="wind"></div>
+                <img id="weather-icon" src="vecteezy_3d-weather-icon-day-with-rain_24825195.png" alt="weather icon" />
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
